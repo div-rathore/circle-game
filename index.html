@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Connect The Dots Game</title>
+    <link rel="stylesheet" href="assignment.css" />
+    <script src="assignment.js"></script>
+  </head>
+  <body>
+    <h1>Play!</h1>
+  <div class="inputs">
+    <div class="playerInput1">
+        <label for="player1">Player Red : </label>
+        <input type="text" id="player1" name="player1" onchange="player1(event)"/>
+      </div>
+  
+      <div class="playerInput2">
+        <label for="player2">Player Yellow : </label>
+        <input type="text" id="player2" name="player2" onchange="player2(event)"/>
+      </div>
+      <!-- <div class="dimensionInput">
+        <h2>Select Dimensions</h2>
+        <label for="rowNumber">No. of Rows</label>
+        <input type="text" id="rowNumber" name="rowNumber" />
+        <label for="colNumber">No. of Columns</label>
+        <input type="text" id="colNumber" name="colNumber" />
+        <button onclick="getRowCols()">ok</button>
+      </div> -->
+
+  </div>
+  
+    <div class="main">
+      <div class="outerBox">
+        <div id="board"></div>
+      </div>
+    </div>
+    <h2 id="winner"></h2>
+    <button onclick="reset()">Reset Game</button>
+    <br/>
+  </body>
+</html>
